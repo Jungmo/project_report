@@ -18,7 +18,7 @@ def __init__(self, url):
 * 위 URL로 response = urllib.urlopen(url)를 하면 파일과 같은 객체가 반환된다.
   * *If all went well, a file-like object is returned.*
 * 즉, 바로 문자열로 읽을 수 없고 response.read() 등으로 문자열로 만들어주어야한다.
-* 위 결과는 * 이유는 모르겠지만, * 결과값이 []로 둘러쌓여 있어 json 파싱이 안된다.
+* 위 결과는 *이유는 모르겠지만,* 결과값이 []로 둘러쌓여 있어 json 파싱이 안된다.
 * json.loads는 JSON 포맷 문자열을 파라미터로 갖는 json parser다.
 * json_data[key이름]으로 JSON 내 값을 가지고 올 수 있다. 
 * 키 dps를 받는 value는 timestamp와 value를 가지고 있는 dictionary 자료형이다.
@@ -62,4 +62,4 @@ for i in range(int(mints), int(maxts)):
 * 현재 각 인스턴스의 value는 dictionary인데 키가 숫자다.(unix Timestamp) 
   * 숫자는 키가 될 수 없기 때문에 자동으로 Unicode화 되어 쓰여진다.
   * 그래서 읽을 때도 똑같이 Unicode로 읽어야한다.
-
+ 
