@@ -63,3 +63,7 @@ for i in range(int(mints), int(maxts)):
   * 숫자는 키가 될 수 없기 때문에 자동으로 Unicode화 되어 쓰여진다.
   * 그래서 읽을 때도 똑같이 Unicode로 읽어야한다.
  
+
+## To be written
+* GUI(달력, metric 등)
+    * metric은 서버에서 가지고와서 list화 하고싶음 
